@@ -3,6 +3,16 @@
     <div class="card is-clearfix columns">
         <figure class="card-image is-480x480 column is-one-thirds">
           <img src="https://bulma.io/images/placeholders/480x480.png">
+        <!-- <img :src="require(`@/assets/products/`+ product.img)" alt="Placeholder image"> -->
+        <img :src="'../assets/products/'+product.img" alt="Placeholder image">
+<!-- <iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="10000"
+    src="https://www.display.land/s/13G5K0aGPUJRxkZxEXO6c7?_branch_match_id=629742221606675438">
+</iframe> -->
+ <button class="button is-primary" @click="goToLink"> View in 3D</button>
+
         </figure>
         <div class="card-content column is-two-thirds">
           <div class="card-content__title">
@@ -142,6 +152,10 @@ export default {
     },
     removeFromFavourite (id) {
       this.$store.commit('removeFromFavourite', id);
+    },
+
+    goToLink(){
+      window.location.href=this.product.link;
     }
   }
 };

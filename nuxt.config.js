@@ -82,7 +82,8 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/font-awesome'
+    '@nuxtjs/font-awesome',
+    ['@nuxtjs/vuetify', { /* module options */ }]
   ],
   /*
   ** Axios module configuration

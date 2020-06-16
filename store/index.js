@@ -2,15 +2,17 @@ export const state = () => ({
   products: [
     {
       id: 1,
-      title: 'Product 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Red flip-flop',
+      description: "Hello everyone, I'm selling those Lebron James flip-flop",
       price: 50,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      img:"p1.png",
+      link: "https://www.display.land/s/13G5K0aGPUJRxkZxEXO6c7?_branch_match_id=629742221606675438"
     },
     {
       id: 2,
@@ -22,7 +24,9 @@ export const state = () => ({
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      img:"p2.png",
+      link: "https://www.display.land/s/13G5K0aGPUJRxkZxEXO6c7?_branch_match_id=629742221606675438"
     },
     {
       id: 3,
@@ -34,7 +38,9 @@ export const state = () => ({
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      img:"p1.png",
+      link: "https://www.display.land/s/13G5K0aGPUJRxkZxEXO6c7?_branch_match_id=629742221606675438"
     },
     {
       id: 4,
@@ -46,7 +52,10 @@ export const state = () => ({
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      img:"p2.png",
+      link: "https://www.display.land/s/13G5K0aGPUJRxkZxEXO6c7?_branch_match_id=629742221606675438"
+
     },
     {
       id: 5,
@@ -58,7 +67,10 @@ export const state = () => ({
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      img:"p1.png",
+      link: "https://www.display.land/s/13G5K0aGPUJRxkZxEXO6c7?_branch_match_id=629742221606675438"
+
     },
     {
       id: 6,
@@ -70,44 +82,11 @@ export const state = () => ({
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      img:"p2.png",
+      link: "https://www.display.land/s/13G5K0aGPUJRxkZxEXO6c7?_branch_match_id=629742221606675438"
+
     },
-    {
-      id: 7,
-      title: 'Product 7',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      price: 50,
-      ratings: 5,
-      reviews: 7,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1
-    },
-    {
-      id: 8,
-      title: 'Product 8',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      price: 35,
-      ratings: 3,
-      reviews: 0,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1
-    },
-    {
-      id: 9,
-      title: 'Product 9',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      price: 110,
-      ratings: 4,
-      reviews: 2,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1
-    }
   ],
   userInfo: {
     isLoggedIn: false,

@@ -2,12 +2,26 @@
   <div class="footer">
     <div class="columns container">
       <div class="column">
-        <p>Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.</p>
+        <p>You'll find what you need on this website, but still here is a way to contact us: 3Dcommerce@3dcommerce.com</p>
       </div>
     <div class="column has-text-right">
-      <p>Vuemmerce | Made with ❤</p>
+      <p>3DCommerce | Made with ❤</p>
     </div>
     </div>
+    <!-- <div class="navbar-item social">
+      <a href="#" class="icon" :title="facebookTooltip">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#" class="icon" :title="twitterTooltip">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#" class="icon" :title="instagramTooltip">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#" class="icon" :title="linkedinTooltip">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div> -->
   </div>
 </template>
 

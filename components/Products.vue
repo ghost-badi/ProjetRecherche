@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="card-image">
+    <!-- <div class="card-image">
       <figure class="image is-4by3">
-        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        <img :src="require(`@/assets/products/`+product.img)" alt="Placeholder image">
       </figure>
     </div>
     <div class="card-content">
@@ -60,7 +60,77 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+
+ <v-card class="mx-auto" max-width="400">
+    <v-img
+      class="white--text align-end"
+      height="300px"
+      :src="require(`@/assets/products/`+product.img)"
+    >
+    </v-img>
+
+    <v-card-subtitle class="pb-0">Number 10</v-card-subtitle>
+      <v-card-text class="text--primary">
+
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">{{ product.title }}</p>
+            </div>
+            <div>
+              <button class="button is-small" :title="removeFromFavouriteLabel" v-show="product.isFavourite" @click="removeFromFavourite(product.id)">
+                <span class="icon is-small">
+                  <i class="fa fa-heart"></i>
+                </span>
+              </button>
+              <button class="button is-small" :title="addToFavouriteLabel" v-show="!product.isFavourite" @click="saveToFavorite(product.id)">
+                <span class="icon is-small">
+                  <i class="fa fa-heart-o"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="content is-clearfix">
+            <p>{{ product.description }}</p>
+            <div class="is-pulled-left">
+              <i v-if="product.ratings === 1" class="fa fa-star"></i>
+              <i v-if="product.ratings === 2" class="fa fa-star"></i>
+              <i v-if="product.ratings === 2" class="fa fa-star"></i>
+              <i v-if="product.ratings === 3" class="fa fa-star"></i>
+              <i v-if="product.ratings === 3" class="fa fa-star"></i>
+              <i v-if="product.ratings === 3" class="fa fa-star"></i>
+              <i v-if="product.ratings === 4" class="fa fa-star"></i>
+              <i v-if="product.ratings === 4" class="fa fa-star"></i>
+              <i v-if="product.ratings === 4" class="fa fa-star"></i>
+              <i v-if="product.ratings === 4" class="fa fa-star"></i>
+              <i v-if="product.ratings === 5" class="fa fa-star"></i>
+              <i v-if="product.ratings === 5" class="fa fa-star"></i>
+              <i v-if="product.ratings === 5" class="fa fa-star"></i>
+              <i v-if="product.ratings === 5" class="fa fa-star"></i>
+              <i v-if="product.ratings === 5" class="fa fa-star"></i>
+              <p>{{ product.reviews > 0 ? `${product.reviews} Reviews` : 'No reviews' }}</p>
+            </div>
+            <p class="is-pulled-right">
+              <span class="title is-4"><strong>&euro; {{ product.price }}</strong></span>
+            </p>
+          </div>
+          <div class="card-footer btn-actions">
+            <div class="card-footer-item field is-grouped">
+              <div class="buttons">
+                <button class="button is-primary" v-if="!product.isAddedToCart" @click="addToCart(product.id)">{{ addToCartLabel }}</button>
+                <button class="button is-text" v-if="product.isAddedToCart" @click="removeFromCart(product.id, false)">{{ removeFromCartLabel }}</button>
+              </div>
+              <div class="select is-rounded is-small">
+                <select @change="onSelectQuantity(product.id)" v-model="selected">
+                  <option v-for="quantity in quantityArray" :value="quantity">{{ quantity }}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </v-card-text>
+    </v-card>
     <nuxt-link
       class="details"
       :to="{

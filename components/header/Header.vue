@@ -21,20 +21,7 @@
         </div>
         
         <div class="navbar-end">
-          <div class="navbar-item social">
-            <a href="#" class="icon" :title="facebookTooltip">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="#" class="icon" :title="twitterTooltip">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#" class="icon" :title="instagramTooltip">
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a href="#" class="icon" :title="linkedinTooltip">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </div>
+          
           <div class="navbar-item shopping-cart" @click="showCheckoutModal">
             <span class="icon">
               <i class="fa fa-shopping-cart"></i>
@@ -96,8 +83,8 @@
 
 <style lang="scss" scoped>
   .title {
-    background: url('../../static/vuemmerce-logo.png') no-repeat;
-    background-position: 50% 50%;
+    background: url('../../static/logo/logo_transparent.png') no-repeat;
+    background-position: 50% 70%;
     background-size: 165px;
     width: 175px;
     height: 35px;
@@ -107,5 +94,8 @@
   }
   a {
     color: grey;
+  }
+  .navbar{
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,87,203,1) 0%, rgba(0,212,255,1) 97%);
   }
 </style>
