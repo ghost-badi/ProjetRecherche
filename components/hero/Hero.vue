@@ -1,5 +1,5 @@
 <template>
-  <div class="hero is-medium is-bold">
+  <div class="hero is-medium is-bold ">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
@@ -20,4 +20,5 @@
     h1, h2 {
       color: #fff;
     }
+
 </style>

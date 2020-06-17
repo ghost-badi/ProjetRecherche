@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-centered is-multiline">
+  <div class="columns is-centered is-multiline adjustments">
     <div class="noOutl card column is-one-quarter" v-for="product in products" :key="product.id">
       <VmProducts :product="product"></VmProducts>
     </div>
@@ -54,4 +54,9 @@ export default {
     // border: 0px solid black!important;
     box-shadow: 0px 0px 0px red;
   }
+
+  
+    .adjustments{
+      margin:10px 0px;
+    }
 </style>

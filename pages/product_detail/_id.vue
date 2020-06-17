@@ -2,9 +2,9 @@
   <div class="section">
     <div class="card is-clearfix columns">
         <figure class="card-image is-480x480 column is-one-thirds">
-          <img src="https://bulma.io/images/placeholders/480x480.png">
+          <img src="../../assets/3d.PNG">
         <!-- <img :src="require(`@/assets/products/`+ product.img)" alt="Placeholder image"> -->
-        <img :src="'../assets/products/'+product.img" alt="Placeholder image">
+        <!-- <img :src="'../assets/products/'+product.img" alt="Placeholder image"> -->
 <!-- <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     width="300"
